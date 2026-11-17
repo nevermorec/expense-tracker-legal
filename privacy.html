@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>记账本 隐私政策 | Expense Tracker Privacy Policy</title>
-    <meta name="description" content="记账本 App（Expense Tracker）的用户隐私政策，说明数据收集、使用、存储与共享方式。">
+    <title>轻迹 隐私政策 | Expense Tracker Privacy Policy</title>
+    <meta name="description" content="轻迹 App（Expense Tracker）的用户隐私政策，说明数据收集、使用、存储与共享方式。">
     <style>
         :root {
             --primary: #007aff;
@@ -174,271 +174,128 @@
 </head>
 <body>
 <div class="container">
-    <div class="lang-switch">
-        <a href="#en">English ↓</a>
-    </div>
-
+    <div class="lang-switch"><a href="#en">English ↓</a></div>
     <header>
-        <h1>记账本 · 隐私政策</h1>
+        <h1>轻迹 · 隐私政策</h1>
         <p class="subtitle">Expense Tracker — Privacy Policy</p>
-        <p class="meta">
-            生效日期：2026 年 5 月 5 日 ·
-            最后更新：2026 年 5 月 5 日
-        </p>
+        <p class="meta">生效日期：2026 年 5 月 5 日 · 最后更新：2026 年 11 月 17 日</p>
     </header>
-
-    <div class="summary">
-        <p>
-            <strong>一句话总结：</strong>
-            「记账本」是一款本地优先的记账 App。
-            你输入的所有账单默认只保存在你的设备和 iCloud 私人数据库中，
-            我们不会读取或上传你的账单原文。
-            只有当你主动使用「AI 智能识别」功能时，相关图片或文字才会被发送到我们的识别服务器临时处理，处理完成后立即丢弃，不做长期存储。
-        </p>
-    </div>
-
-    <h2>1. 我们是谁</h2>
-    <p>
-        本隐私政策适用于由<strong>「记账本」</strong>开发团队（以下简称"我们"）开发并通过 Apple App Store 发布的
-        iOS 应用 <strong>「记账本」</strong>（包名 <code>com.expense.ExpenseTracker</code>，以下简称"本 App"）。
-    </p>
-
-    <h2>2. 我们收集哪些信息</h2>
-    <p>
-        我们践行「数据最小化」原则。具体收集情况如下：
-    </p>
-
-    <h3>2.1 你主动输入的账单数据</h3>
+    <div class="summary"><p>轻迹是一款本地优先的记账 App。手动记账数据存储在设备及你启用的 iCloud 私人数据库中。AI 记账为可选功能：选中的完整图片或提交的文字会经我们的服务器发送至<strong>火山引擎方舟（豆包模型）</strong>。这些内容可能包含个人信息，请在发送前裁剪或删除不需要的信息。</p></div>
+    <h2>1. 适用范围</h2>
+    <p>本政策适用于「轻迹记账」（包名 <code>com.expense.ExpenseTracker</code>）。以下明确同意、拒绝及撤回机制适用于 1.2.7（build 6）及后续对应版本；旧客户端需更新后才可继续使用 AI。2026 年 11 月 17 日部署的后端已拦截未携带有效同意版本的识别请求。</p>
+    <h2>2. AI 数据共享：发送什么、发送给谁</h2>
+    <p>仅在你主动使用图片、文字、语音转写、分享扩展或快捷指令等 AI 识别功能，且已明确同意 AI 数据共享后，才发送识别内容。接收方为<strong>火山引擎方舟（豆包模型；服务提供方：北京火山引擎科技有限公司）</strong>，用于提取金额、商户、日期、分类和付款方式等记账字段。</p>
     <ul>
-        <li>账单标题、金额、分类、日期、备注等。</li>
-        <li>这些数据存储在你设备本机的 SwiftData 数据库中。</li>
-        <li>如果你登录了 iCloud，这些数据会通过 Apple CloudKit 同步到你的 iCloud 私人数据库；
-            <strong>我们的服务器无法读取这些数据，Apple 也不会将其交给我们。</strong></li>
+        <li><strong>图片：</strong>你当次选择或分享的完整图片、截屏。图片里的姓名、电话、地址、账号、订单及消费记录等个人信息也可能随图片发送；不会自动遮挡或脱敏。</li>
+        <li><strong>文字：</strong>你提交的完整文字，包括语音转写文字。其内包含的个人信息也会被发送。</li>
+        <li><strong>范围：</strong>不会自动扫描整个相册或将已有账本整体上传。请只选择你有权处理的内容，并在发送前裁剪、遮挡或删除无关信息。</li>
     </ul>
-
-    <h3>2.2 仅在使用「AI 识别」时上传的内容</h3>
-    <p>
-        当你主动使用「拍照/选图识别」「截屏快捷指令」「分享扩展」「语音/文字识别」等 AI 记账功能时，本 App 会将以下内容发送到我们的识别服务器：
-    </p>
+    <p>传输路径为 App → 我们的 HTTPS 识别服务 → 火山引擎方舟北京区域 API（<code>ark.cn-beijing.volces.com</code>）。我们的后端把所选图片或文字作为识别输入发送给方舟；<strong>不会将额度标识或 Apple 签名交易凭证作为 AI 提示内容转发</strong>。</p>
+    <div class="callout">第三方对收到内容的处理和保留受其服务条款、适用配置及隐私政策约束。我们的请求设置不保存模型响应（<code>store=false</code>），但这不等于第三方系统完全不保留任何安全或运营记录。我们不作未经核实的第三方「零保留」或「不用于训练」承诺。请阅读 <a href="https://www.volcengine.com/docs/6256/64902" target="_blank" rel="noopener">火山引擎隐私政策</a>。</div>
+    <h2>3. 你的选择与同意</h2>
     <ul>
-        <li>你选择的图片或截屏的二进制数据；</li>
-        <li>你输入或语音转写后的文字；</li>
-        <li>一个匿名的设备标识符（一段随机生成的 UUID，不包含你的姓名、手机号、Apple ID、IDFA）；</li>
-        <li>当前会员状态（"member" 或 "free"），仅用于分配 AI 调用次数额度。</li>
+        <li>首次使用 AI 前，会展示接收方、用途、数据类别、保存说明及隐私链接；只有点击「同意并使用 AI」后才允许上传。开启旧版 AI 功能开关、相册选择或麦克风授权均不替代此同意。</li>
+        <li>可选择「不同意，使用手动记账」，或关闭告知页。拒绝后不会发送新的识别内容，手动记账继续可用。</li>
+        <li>可在「设置 → AI 数据与隐私」查看说明或撤回同意。撤回阻止未来的新识别上传，无法自动收回已经传输的内容。</li>
+        <li>同意版本及时间保存在当前设备的 App 共享容器中，供主 App、分享扩展和快捷指令检查；不会作为账本数据同步到其他设备。未同意时，快捷指令会提示先在主 App 查看说明并同意。</li>
+        <li>撤回 AI 同意不会自动取消 Apple 订阅；如不再需要会员，请另行取消订阅。</li>
     </ul>
-    <div class="callout">
-        服务器收到上述数据后，仅用于实时调用大模型完成识别，
-        <strong>处理完成后立即从内存中丢弃，不会被持久化或用于模型训练</strong>。
-        我们的访问日志仅保留请求时间、设备 UUID、调用次数等元数据，
-        不保留图片本体和文字原文。
-    </div>
-
-    <h3>2.3 设备与诊断信息</h3>
+    <h2>4. 其他数据与 Apple 服务</h2>
     <ul>
-        <li>设备 UUID：在你首次使用 AI 功能时生成，仅用于按设备维度统计每日 AI 调用次数（非会员每日 3 次，会员每日 50 次）；不与 Apple ID、IDFA 关联。</li>
-        <li>系统崩溃日志：通过 Apple 官方崩溃报告机制收集（前提是你在系统设置中允许"与 App 开发者共享分析"），由 Apple 转发给我们以便修复缺陷。</li>
+        <li><strong>手动账单：</strong>标题、金额、分类、日期、备注等保存在本机 SwiftData 数据库中。启用 iCloud 后通过 Apple CloudKit 同步到你的私人数据库，我们的识别服务器不会因此自动接收整本账单。你主动选择的识别输入仍按第 2 节处理。</li>
+        <li><strong>额度管理：</strong>App 向我们的后端发送随机设备标识，或由已验证交易派生的假名化额度主体标识，用于累计每日调用次数。这些标识不是不可关联的匿名数据。</li>
+        <li><strong>订阅验证：</strong>Apple StoreKit 处理购买和付款。App 可将 Apple 签名交易凭证发送至我们的后端验证订阅、产品及额度；凭证可能包含交易标识、商品、环境、有效期等信息。我们不会收到支付银行卡资料，也不将凭证发给 AI 模型。</li>
+        <li><strong>语音：</strong>使用 Apple Speech 转写，支持时优先要求设备端识别；不支持时可能由 Apple 在线处理。原始录音不会上传给我们的后端或方舟 AI；转写文字在你同意后按第 2 节发送。</li>
+        <li><strong>主动反馈：</strong>你通过意见反馈主动提交的文字用于处理支持问题，可能包含你自行填写的联系方式或其他个人信息。请避免提交无关敏感信息。</li>
+        <li><strong>诊断：</strong>你允许与开发者共享 Apple 分析数据时，Apple 可能向我们提供崩溃诊断报告。本 App 不使用广告 IDFA，不主动索取通讯录或定位权限。</li>
     </ul>
-
-    <h3>2.4 我们 <em>不</em> 收集</h3>
+    <p>Apple 服务适用 <a href="https://www.apple.com/legal/privacy/zh-cn/" target="_blank" rel="noopener">Apple 隐私政策</a>。</p>
+    <h2>5. 系统权限</h2>
+    <table><thead><tr><th>权限或功能</th><th>用途与选择</th></tr></thead><tbody>
+        <tr><td>图片选择</td><td>读取你主动选中的图片用于识别；不选择即可不用图片识别。</td></tr>
+        <tr><td>麦克风与语音识别</td><td>录音及 Apple Speech 转写；可拒绝系统授权并使用手动记账。</td></tr>
+        <tr><td>iCloud</td><td>同步私人账单数据，可在系统设置中管理。</td></tr>
+    </tbody></table>
+    <h2>6. 保存、安全与保留期</h2>
     <ul>
-        <li>姓名、手机号、邮箱、身份证号等任何身份信息；</li>
-        <li>位置信息；</li>
-        <li>通讯录、相册、健康等系统授权数据（除你当次主动选择上传的单张图片外）；</li>
-        <li>用于广告归因的 IDFA；</li>
-        <li>支付银行卡信息（订阅付款由 Apple App Store 完整处理，款项不经过我们的服务器）。</li>
+        <li><strong>识别内容：</strong>我们的识别服务在处理请求期间使用图片、文字和识别结果，不将这些内容写入业务日志或内容数据库。图片上传的临时表单文件在请求结束时清理；不建立识别内容档案。App 上的识别结果可由你确认后保存为本地账单。</li>
+        <li><strong>运行日志：</strong>保留时间、接口类别、状态、耗时等必要运行信息，不记录识别原文、模型原始输出、交易凭证或设备标识。应用日志按 UTC 日轮转，保留当日及此前 29 个日历日，定时清理。</li>
+        <li><strong>额度记录：</strong>数据库保存假名化主体、日期及每日次数等必要额度字段，保留当日及此前 29 个日历日；启动后和每小时执行过期清理。</li>
+        <li><strong>反馈：</strong>主动反馈另存于限制访问的支持收件文件，与运行日志分开，保留当日及此前 29 个日历日。通过联系邮箱发送的邮件由邮箱服务处理，可联系我们申请删除。</li>
+        <li><strong>网络基础设施：</strong>HTTPS、服务器、网关及云服务在传输和提供服务时需处理连接 IP 等网络信息。上述应用日志规则不表示整个网络链路不处理 IP；基础设施的安全记录由相应服务及配置管理。</li>
+        <li><strong>安全措施：</strong>识别请求通过 HTTPS 传输，服务器应用日志和反馈文件限制访问。第三方服务的保留安排见第 2 节；Apple iCloud 存储位置及保留取决于 Apple 服务和你的账户设置。</li>
     </ul>
-
-    <h2>3. 系统权限说明</h2>
-    <table>
-        <thead>
-            <tr><th>权限</th><th>用途</th><th>是否可拒绝</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>相册（Photo Library）</td><td>当你选择图片识别记账时，读取你选中的那一张图片</td><td>可拒绝，只是无法用图片记账</td></tr>
-            <tr><td>麦克风（Microphone）</td><td>当你长按使用语音记账时，录音并转写为文字</td><td>可拒绝</td></tr>
-            <tr><td>语音识别（Speech Recognition）</td><td>将麦克风音频转写成文字（在设备上由 Apple 完成，再发送文字给我们）</td><td>可拒绝</td></tr>
-            <tr><td>iCloud</td><td>多设备账单同步（你的私人数据库，我们看不到）</td><td>可拒绝</td></tr>
-        </tbody>
-    </table>
-
-    <h2>4. 第三方服务</h2>
-    <p>本 App 与下列第三方服务有数据交互：</p>
+    <h2>7. 管理与删除</h2>
+    <p>你可在 App 中管理或删除本地账单，在系统 iCloud 存储设置管理云端副本，在「设置 → AI 数据与隐私」撤回当前设备的 AI 同意，或通过下方邮箱提出访问、更正或删除请求。删除 App 不一定删除 iCloud 副本，也不会自动取消订阅。为处理请求，我们可能需要与你核实必要的记录范围，请勿发送 Apple 密码或完整交易凭证。</p>
+    <h2>8. 自动续订会员</h2>
     <ul>
-        <li><strong>Apple iCloud / CloudKit</strong>：账单数据同步，受 <a href="https://www.apple.com/legal/privacy/zh-cn/" target="_blank" rel="noopener">Apple 隐私政策</a>约束。</li>
-        <li><strong>Apple App Store / StoreKit</strong>：内购订阅与续订流程，账单和支付信息由 Apple 直接处理，我们仅收到"已开通会员"这个布尔结果。</li>
-        <li><strong>火山引擎方舟（Volcengine Ark）大模型服务</strong>：用于 AI 图片/文字识别。识别完成后我们丢弃数据，火山引擎按其服务条款处理日志（详见 <a href="https://www.volcengine.com/docs/82379/1099475" target="_blank" rel="noopener">火山方舟服务协议</a>）。</li>
+        <li>商品：月度会员，<code>com.expense.ExpenseTracker.membership.monthly</code>，周期为 1 个月、自动续订，价格以 Apple 购买页面显示为准。</li>
+        <li>当前配置下，免费用户每日 AI 次数为 3 次，会员为 50 次，未使用额度不跨日累计。AI 使用仍需同意数据共享及满足系统权限、网络等条件。</li>
+        <li>除非至少在当前周期结束前 24 小时取消，Apple 可在周期结束前 24 小时内扣取续订费用。请在系统「设置 → Apple 账户 → 订阅」中管理或取消。</li>
+        <li>退款请通过 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">Apple 退款入口</a>申请，按 Apple 政策及适用规则处理。</li>
     </ul>
-
-    <h2>5. 数据存储位置与保留期</h2>
-    <ul>
-        <li>账单数据：在你的设备和你自己的 iCloud 中，由你完全控制，删除 App 即可清除本机副本。</li>
-        <li>AI 识别上传内容：服务器内存中处理，<strong>不持久化</strong>。</li>
-        <li>调用日志（设备 UUID、调用时间、HTTP 状态）：保留 30 天用于安全审计和限流，30 天后自动清除。</li>
-    </ul>
-
-    <h2>6. 你的权利</h2>
-    <p>你可以随时：</p>
-    <ul>
-        <li>在 App 内「设置 → 数据管理 → 清除所有数据」一键清除本地账单；</li>
-        <li>在系统「设置 → Apple ID → iCloud → 管理账户存储 → 记账本」中清除 iCloud 副本；</li>
-        <li>在系统「设置 → Apple ID → 订阅」中取消月度订阅；</li>
-        <li>通过下方邮箱联系我们，要求删除你设备 UUID 对应的全部调用日志。</li>
-    </ul>
-
-    <h2>7. 自动续订订阅条款</h2>
-    <ul>
-        <li>商品名称：月度会员（Monthly Membership）</li>
-        <li>订阅周期：1 个月</li>
-        <li>价格：以付费墙内显示的当地货币价格为准（中国大陆约 ¥12 / 月）</li>
-        <li>续订规则：到期前 24 小时内 Apple 自动从你的 Apple ID 收取下一周期费用。</li>
-        <li>取消方式：在到期前 24 小时之外，前往「设置 → Apple ID → 订阅」中关闭自动续订即可。</li>
-        <li>已支付的当期款项不予退款（除非符合 Apple 的退款政策，请联系 Apple 客服处理）。</li>
-    </ul>
-
-    <h2>8. 儿童隐私</h2>
-    <p>
-        本 App 不针对 13 岁以下儿童设计，不会有意收集儿童的个人信息。
-        若发现误收，将在确认后立即删除。
-    </p>
-
-    <h2>9. 政策变更</h2>
-    <p>
-        若本政策有重大变更，我们会通过 App 内提示或在本页面顶部更新「最后更新日期」。
-        建议你定期查看本页以了解最新版本。
-    </p>
-
+    <h2>9. 未成年人及政策变更</h2>
+    <p>本 App 不面向 13 岁以下儿童设计；未成年人应在监护人指导下使用，并避免发送个人敏感信息。如发现儿童个人信息处理问题，请联系我们。数据共享范围或接收方发生重大变更时，我们会更新说明，并在需要时重新征求同意。</p>
     <h2>10. 联系我们</h2>
-    <p>
-        如对本隐私政策或数据处理有任何疑问、投诉或行使权利的请求，
-        请通过以下方式联系我们：
-    </p>
+    <p>隐私咨询、投诉或权利请求：<a href="mailto:741096681@qq.com">741096681@qq.com</a>；也可使用 App 设置中的「意见反馈」。</p>
+
+    <hr style="margin:80px 0 40px;border:none;border-top:1px solid var(--border)">
+    <header id="en"><h1>Privacy Policy</h1><p class="subtitle">Expense Tracker (iOS)</p><p class="meta">Effective: May 5, 2026 · Last updated: November 17, 2026</p></header>
+    <div class="summary"><p>Expense Tracker stores manual transactions on your device and, when enabled, in your private iCloud database. AI bookkeeping is optional. The <strong>entire selected image or submitted text</strong> is sent through our server to <strong>Volcengine Ark (Doubao models)</strong> and may contain personal data. Crop or remove unnecessary information before submitting.</p></div>
+    <h2>1. Scope</h2>
+    <p>This policy applies to bundle <code>com.expense.ExpenseTracker</code>. The explicit consent and withdrawal controls below apply to version 1.2.7 (build 6) and corresponding later versions. Older clients must update to use AI. The backend deployed on November 17, 2026 rejects recognition requests lacking the supported consent version.</p>
+    <h2>2. AI sharing: data, recipient and purpose</h2>
+    <p>Only after you explicitly consent and initiate recognition via images, text, voice transcription, the share extension or a shortcut does the app send recognition content. The recipient is <strong>Volcengine Ark (Doubao models), provided by Beijing Volcano Engine Technology Co., Ltd.</strong>, to extract bookkeeping fields such as amount, merchant, date, category and payment method.</p>
     <ul>
-        <li>邮箱：<a href="mailto:support@example.com">support@example.com</a></li>
-        <li>App 内反馈：「设置 → 关于 → 意见反馈」</li>
+        <li><strong>Images:</strong> the complete selected or shared image/screenshot. Names, telephone numbers, addresses, account identifiers, orders and spending information visible in it may be transmitted. There is no automatic redaction.</li>
+        <li><strong>Text:</strong> the complete text you submit, including voice transcription and any personal data it contains.</li>
+        <li>We do not automatically scan the full photo library or upload the entire existing ledger. Submit only content you are authorized to process and remove unrelated information first.</li>
     </ul>
-
-    <!-- ===================== English version ===================== -->
-    <hr style="margin: 80px 0 40px; border: none; border-top: 1px solid var(--border);">
-
-    <header id="en">
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">Expense Tracker (iOS)</p>
-        <p class="meta">
-            Effective: May 5, 2026 ·
-            Last updated: May 5, 2026
-        </p>
-    </header>
-
-    <div class="summary">
-        <p>
-            <strong>TL;DR:</strong>
-            Expense Tracker is a local-first finance tracker.
-            Your transactions stay on your device and in your private iCloud database — we cannot read them.
-            When you actively use AI recognition (photo / text / voice), the relevant content is sent to our server for one-shot processing, then discarded immediately.
-        </p>
-    </div>
-
-    <h2>1. Who We Are</h2>
-    <p>
-        This Privacy Policy applies to the iOS application <strong>"Expense Tracker"</strong>
-        (bundle ID <code>com.expense.ExpenseTracker</code>) developed and distributed via Apple App Store
-        (the "App", "we", "us").
-    </p>
-
-    <h2>2. What We Collect</h2>
-
-    <h3>2.1 Transactions you enter</h3>
+    <p>Data flows from the app through our HTTPS recognition backend to the Volcengine Ark Beijing-region API (<code>ark.cn-beijing.volces.com</code>). Our backend sends the selected image/text to the model. <strong>Quota identifiers and Apple signed transaction credentials are not forwarded as model prompt content.</strong></p>
+    <div class="callout">The provider's processing and retention are governed by its applicable service terms, configuration and <a href="https://www.volcengine.com/docs/6256/64902" target="_blank" rel="noopener">privacy policy</a>. Our requests set <code>store=false</code> for model responses; this does not establish that the provider retains no security or operational records. We do not make unverified promises of provider zero retention or no model training.</div>
+    <h2>3. Consent and choices</h2>
     <ul>
-        <li>Title, amount, category, date, notes.</li>
-        <li>Stored locally in SwiftData on your device.</li>
-        <li>If iCloud is enabled, replicated to your private iCloud database via Apple CloudKit.
-            <strong>We cannot access your iCloud database; Apple does not share it with us.</strong></li>
+        <li>Before first AI use, the app displays the recipient, purpose, data categories, storage explanation and policy links. Upload requires selecting “Agree and Use AI.” An older AI feature toggle, image selection or microphone permission does not replace consent.</li>
+        <li>You may decline or close the disclosure. No new recognition content is sent; manual bookkeeping remains available.</li>
+        <li>Review or withdraw consent in <strong>Settings → AI Data &amp; Privacy</strong>. Withdrawal stops future new uploads; it cannot automatically recall content already transmitted.</li>
+        <li>The consent version and timestamp are stored in the current device's shared app container for the app, share extension and shortcuts. They are not synchronized as ledger data. A shortcut without consent asks you to review and consent in the main app first.</li>
+        <li>Withdrawing consent does not cancel an Apple subscription; manage it separately if no longer needed.</li>
     </ul>
-
-    <h3>2.2 Content uploaded only when you use AI recognition</h3>
-    <p>When you use Photo / Screenshot / Share / Voice / Text recognition, we send to our recognition server:</p>
+    <h2>4. Other data and Apple services</h2>
     <ul>
-        <li>The single image or text you selected;</li>
-        <li>An anonymous device UUID (random, not linked to your name, phone, Apple ID, or IDFA);</li>
-        <li>Membership status ("member" / "free") for quota allocation.</li>
+        <li><strong>Transactions:</strong> title, amount, category, date and notes are stored in local SwiftData and, if enabled, your private Apple CloudKit database. This does not automatically send your full ledger to our recognition backend. Content you select for recognition is handled as described above.</li>
+        <li><strong>Quotas:</strong> our backend receives a random device identifier or a pseudonymous quota subject derived from verified transactions to count daily requests. These are pseudonymous identifiers, not a guarantee of irreversible anonymity.</li>
+        <li><strong>Purchases:</strong> Apple StoreKit handles payment. The app may send Apple signed transaction credentials to our backend to verify subscription, product and quota. Credentials can include transaction identifiers, product, environment and validity information. We do not receive payment card details or send these credentials to the AI model.</li>
+        <li><strong>Speech:</strong> Apple Speech performs transcription on-device when supported, and may use Apple's online service otherwise. Original recordings are not uploaded to our backend or Ark; transcribed text is sent for AI recognition with your consent.</li>
+        <li><strong>Feedback:</strong> text you intentionally submit is used for support and may include contact or personal information you choose to provide. Avoid unrelated sensitive content.</li>
+        <li><strong>Diagnostics:</strong> Apple may share crash reports when you allow developer analytics. The app does not use advertising IDFA or request contacts or location permissions.</li>
     </ul>
-    <div class="callout">
-        Uploaded content is processed in memory by an LLM and
-        <strong>discarded immediately afterwards — never persisted, never used for model training</strong>.
-        Only request metadata (timestamp, UUID, count) is kept for rate-limiting (30 days max).
-    </div>
-
-    <h3>2.3 We do NOT collect</h3>
+    <p>Apple services are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+    <h2>5. System permissions</h2>
+    <p>Image selection reads the image you choose. Microphone and Speech Recognition permissions allow recording and Apple transcription. You may decline these and continue manual bookkeeping. Manage private iCloud synchronization in system settings.</p>
+    <h2>6. Storage, security and retention</h2>
     <ul>
-        <li>Name, phone number, email, government ID, or any identity information;</li>
-        <li>Location;</li>
-        <li>Contacts, full Photo Library scan, Health, etc.;</li>
-        <li>IDFA for ad attribution;</li>
-        <li>Payment / card details (handled entirely by Apple StoreKit).</li>
+        <li><strong>Recognition content:</strong> our recognition service uses images, text and results while processing the request, without writing that content to business logs or a content database. Temporary multipart upload files are removed when the request ends. You may confirm results to save as transactions on your device.</li>
+        <li><strong>Application logs:</strong> necessary operational metadata such as time, endpoint category, status and duration is retained. Recognition text, raw model output, transaction credentials and device identifiers are excluded. Logs rotate by UTC date and retain the current day and previous 29 calendar days with periodic cleanup.</li>
+        <li><strong>Quota records:</strong> necessary pseudonymous subject, date and daily counters are retained for the current day and previous 29 calendar days. Cleanup runs after startup and hourly.</li>
+        <li><strong>Feedback:</strong> intentional support feedback is kept in access-restricted support inbox files, separate from operational logs, for the current day and previous 29 calendar days. Email is handled by our email service; contact us to request deletion.</li>
+        <li><strong>Infrastructure:</strong> HTTPS, hosting, gateways and cloud providers necessarily process IP addresses and other connection information. Application log exclusions do not mean that the entire network path processes no IP addresses; infrastructure security records depend on those services and configurations.</li>
+        <li><strong>Security:</strong> recognition requests use HTTPS and server application log/feedback files have restricted access. Provider retention is described in section 2; iCloud location and retention depend on Apple services and your account settings.</li>
     </ul>
-
-    <h2>3. iOS Permissions</h2>
-    <table>
-        <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
-        <tbody>
-            <tr><td>Photo Library</td><td>Read the single image you pick for recognition</td></tr>
-            <tr><td>Microphone</td><td>Record audio when you long-press to dictate a transaction</td></tr>
-            <tr><td>Speech Recognition</td><td>On-device speech-to-text via Apple SDK</td></tr>
-            <tr><td>iCloud</td><td>Multi-device sync of your private database</td></tr>
-        </tbody>
-    </table>
-
-    <h2>4. Third-Party Services</h2>
+    <h2>7. Manage and delete</h2>
+    <p>Manage or delete local transactions in the app, manage cloud copies in iCloud storage settings, and withdraw this device's consent in Settings → AI Data &amp; Privacy. Contact us for access, correction or deletion requests. Deleting the app may not delete iCloud copies and does not cancel subscriptions. We may need to verify the relevant record scope; do not send Apple passwords or full transaction credentials.</p>
+    <h2>8. Auto-renewing membership</h2>
     <ul>
-        <li><strong>Apple iCloud / CloudKit</strong> — sync, governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
-        <li><strong>Apple App Store / StoreKit</strong> — payments handled entirely by Apple; we only receive a boolean entitlement.</li>
-        <li><strong>Volcengine Ark LLM</strong> — used for image/text recognition; data is dropped after processing.</li>
+        <li>Monthly Membership, product <code>com.expense.ExpenseTracker.membership.monthly</code>, auto-renews monthly at the price displayed by Apple.</li>
+        <li>The current daily AI quota is 3 for free users and 50 for members; unused requests do not roll over. AI still requires consent, permissions and network availability.</li>
+        <li>Apple may charge renewal within 24 hours before the current period ends unless cancelled at least 24 hours before that end. Manage subscriptions in system Settings → Apple Account → Subscriptions.</li>
+        <li>Request refunds through <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">Apple</a>, subject to applicable rules and Apple's policies.</li>
     </ul>
-
-    <h2>5. Storage & Retention</h2>
-    <ul>
-        <li>Transactions: on your device and your iCloud only.</li>
-        <li>AI uploads: processed in memory, not persisted.</li>
-        <li>Call logs (UUID, timestamp, HTTP status): retained ≤ 30 days for rate-limiting and security audit.</li>
-    </ul>
-
-    <h2>6. Your Rights</h2>
-    <ul>
-        <li>Wipe local data via <em>Settings → Data → Delete All Data</em>.</li>
-        <li>Wipe iCloud copy via <em>iOS Settings → Apple ID → iCloud → Manage Storage → Expense Tracker</em>.</li>
-        <li>Cancel subscription via <em>iOS Settings → Apple ID → Subscriptions</em>.</li>
-        <li>Email us to request deletion of all server logs tied to your device UUID.</li>
-    </ul>
-
-    <h2>7. Auto-Renewing Subscription</h2>
-    <ul>
-        <li>Product: <strong>Monthly Membership</strong></li>
-        <li>Period: 1 month</li>
-        <li>Price: as displayed in the paywall, in your local currency</li>
-        <li>Auto-renewal: charged within 24 hours before the current period ends, unless cancelled at least 24 hours prior.</li>
-        <li>Cancel via <em>iOS Settings → Apple ID → Subscriptions</em>.</li>
-    </ul>
-
-    <h2>8. Children's Privacy</h2>
-    <p>
-        Expense Tracker is not directed to children under 13 and does not knowingly collect their personal data.
-    </p>
-
-    <h2>9. Changes</h2>
-    <p>
-        Material changes will be announced in-app or by updating the "Last updated" date at the top of this page.
-    </p>
-
+    <h2>9. Children and changes</h2>
+    <p>The app is not directed to children under 13. Minors should use it with guardian guidance and avoid submitting sensitive information. Contact us about children's data concerns. Material changes to sharing scope or recipients will be disclosed and consent requested again where needed.</p>
     <h2>10. Contact</h2>
-    <p>
-        Questions, complaints, or requests:
-        <a href="mailto:support@example.com">support@example.com</a>
-        — or use <em>Settings → About → Feedback</em> in the app.
-    </p>
-
-    <footer>
-        © 2026 Expense Tracker. All rights reserved.
-    </footer>
+    <p>Privacy questions, complaints and rights requests: <a href="mailto:741096681@qq.com">741096681@qq.com</a>, or Feedback in the app's settings.</p>
+    <footer>© 2026 Expense Tracker. All rights reserved.</footer>
 </div>
 </body>
 </html>
